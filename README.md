@@ -14,13 +14,12 @@ This application uses the following technologies:
 
 Below are example video and screenshots of the vision-ml app flow.
 
-<iframe src="https://player.vimeo.com/video/237217871" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/237217871">vision-ml</a> from <a href="https://vimeo.com/user72345907">Cody Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+[vision-ml Example Video](https://vimeo.com/user72345907/prototype-vision-ml)
 
-![defaultView-remote](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/defaultView-remote.png)
-![defaultView-tree](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/defaultView-tree.png)
+![defaultView-remote](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/defaultView-remote.PNG)
+![defaultView-tree](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/defaultView-tree.PNG)
 
-![gameRemote-confident](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/gameRemote-confident.png)
-![mouse-confident](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/mouse-confident.png)
+![gameRemote-confident](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/gameRemote-confident.PNG)
+![mouse-confident](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/mouse-confident.PNG)
 
-![unsure](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/rubiks-unsure.png)
+![unsure](https://github.com/CodyJLeeApps/vision-ml/blob/master/app_screenshots/rubiks-unsure.PNG)
