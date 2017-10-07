@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		C337BDF51F88302C009228FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BDF41F88302C009228FF /* AppDelegate.swift */; };
-		C337BDF71F88302C009228FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BDF61F88302C009228FF /* ViewController.swift */; };
+		C337BDF71F88302C009228FF /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BDF61F88302C009228FF /* CameraVC.swift */; };
 		C337BDFA1F88302C009228FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C337BDF81F88302C009228FF /* Main.storyboard */; };
 		C337BDFC1F88302C009228FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C337BDFB1F88302C009228FF /* Assets.xcassets */; };
 		C337BDFF1F88302C009228FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C337BDFD1F88302C009228FF /* LaunchScreen.storyboard */; };
+		C337BE0B1F883726009228FF /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BE0A1F883726009228FF /* RoundedShadowView.swift */; };
+		C337BE0D1F8839A3009228FF /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BE0C1F8839A3009228FF /* RoundedShadowImageView.swift */; };
+		C337BE101F883C22009228FF /* Togglable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BE0F1F883C22009228FF /* Togglable.swift */; };
+		C337BE141F883CCB009228FF /* FlashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337BE131F883CCB009228FF /* FlashState.swift */; };
+		C37A82B01F891B5C00D02D52 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C37A82AF1F891B5C00D02D52 /* SqueezeNet.mlmodel */; };
+		C37A82B21F891BD700D02D52 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C37A82B11F891BD700D02D52 /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C337BDF11F88302C009228FF /* vision-ml.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-ml.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C337BDF41F88302C009228FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C337BDF61F88302C009228FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C337BDF61F88302C009228FF /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		C337BDF91F88302C009228FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C337BDFB1F88302C009228FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C337BDFE1F88302C009228FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C337BE001F88302C009228FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C337BE0A1F883726009228FF /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		C337BE0C1F8839A3009228FF /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		C337BE0F1F883C22009228FF /* Togglable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Togglable.swift; sourceTree = "<group>"; };
+		C337BE131F883CCB009228FF /* FlashState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashState.swift; sourceTree = "<group>"; };
+		C37A82AF1F891B5C00D02D52 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		C37A82B11F891BD700D02D52 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,68 @@
 		C337BDF31F88302C009228FF /* vision-ml */ = {
 			isa = PBXGroup;
 			children = (
+				C337BE111F883C37009228FF /* Enums */,
+				C337BE0E1F883C10009228FF /* Protocols */,
+				C337BE061F88307D009228FF /* Model */,
+				C337BE071F883083009228FF /* View */,
+				C337BE081F883088009228FF /* Controller */,
+				C337BE091F88308E009228FF /* Resources */,
 				C337BDF41F88302C009228FF /* AppDelegate.swift */,
-				C337BDF61F88302C009228FF /* ViewController.swift */,
 				C337BDF81F88302C009228FF /* Main.storyboard */,
 				C337BDFB1F88302C009228FF /* Assets.xcassets */,
 				C337BDFD1F88302C009228FF /* LaunchScreen.storyboard */,
 				C337BE001F88302C009228FF /* Info.plist */,
 			);
 			path = "vision-ml";
+			sourceTree = "<group>";
+		};
+		C337BE061F88307D009228FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C337BE071F883083009228FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C337BE0A1F883726009228FF /* RoundedShadowView.swift */,
+				C337BE0C1F8839A3009228FF /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C337BE081F883088009228FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C337BDF61F88302C009228FF /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C337BE091F88308E009228FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C37A82B11F891BD700D02D52 /* MobileNet.mlmodel */,
+				C37A82AF1F891B5C00D02D52 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C337BE0E1F883C10009228FF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C337BE0F1F883C22009228FF /* Togglable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C337BE111F883C37009228FF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C337BE131F883CCB009228FF /* FlashState.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C337BDF71F88302C009228FF /* ViewController.swift in Sources */,
+				C37A82B21F891BD700D02D52 /* MobileNet.mlmodel in Sources */,
+				C337BE0D1F8839A3009228FF /* RoundedShadowImageView.swift in Sources */,
+				C337BDF71F88302C009228FF /* CameraVC.swift in Sources */,
+				C337BE101F883C22009228FF /* Togglable.swift in Sources */,
+				C37A82B01F891B5C00D02D52 /* SqueezeNet.mlmodel in Sources */,
 				C337BDF51F88302C009228FF /* AppDelegate.swift in Sources */,
+				C337BE0B1F883726009228FF /* RoundedShadowView.swift in Sources */,
+				C337BE141F883CCB009228FF /* FlashState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79WP5JD2P9;
 				INFOPLIST_FILE = "vision-ml/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CJLeeApps.vision-ml";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79WP5JD2P9;
 				INFOPLIST_FILE = "vision-ml/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CJLeeApps.vision-ml";
 				PRODUCT_NAME = "$(TARGET_NAME)";
