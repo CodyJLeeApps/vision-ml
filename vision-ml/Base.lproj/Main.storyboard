@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -73,10 +72,14 @@
                                     <constraint firstItem="eGC-es-3gt" firstAttribute="leading" secondItem="U4f-S3-PZW" secondAttribute="leading" constant="8" id="xgi-jB-l4b"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="wBe-cm-V8M">
+                                <rect key="frame" x="311" y="572" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0Ks-Rg-RnV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2dW-Fi-apn"/>
+                            <constraint firstItem="wBe-cm-V8M" firstAttribute="centerY" secondItem="0gn-x6-C3J" secondAttribute="centerY" id="3iT-9Z-nrR"/>
                             <constraint firstItem="0Ks-Rg-RnV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4fB-6b-ZuF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4f-S3-PZW" secondAttribute="trailing" constant="16" id="BLZ-9K-4oX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ks-Rg-RnV" secondAttribute="trailing" id="OAT-WM-fvo"/>
@@ -85,6 +88,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0gn-x6-C3J" secondAttribute="trailing" constant="16" id="aU6-Wu-4Ji"/>
                             <constraint firstItem="U4f-S3-PZW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bI6-Xs-6XZ"/>
                             <constraint firstItem="OFK-nT-Mdz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cd4-ne-Ep3"/>
+                            <constraint firstItem="wBe-cm-V8M" firstAttribute="centerX" secondItem="0gn-x6-C3J" secondAttribute="centerX" id="nQu-gX-GUT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OFK-nT-Mdz" secondAttribute="bottom" constant="20" id="qGY-9Q-LK8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Ks-Rg-RnV" secondAttribute="bottom" id="wxG-JF-S7c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0gn-x6-C3J" secondAttribute="bottom" constant="20" id="xoY-9K-Pax"/>
@@ -98,6 +102,7 @@
                         <outlet property="flashBtn" destination="OFK-nT-Mdz" id="olI-t5-vG2"/>
                         <outlet property="identificationLbl" destination="vnv-mR-akL" id="Qnb-5d-oFW"/>
                         <outlet property="roundedLblView" destination="U4f-S3-PZW" id="91Y-T3-bwk"/>
+                        <outlet property="spinner" destination="wBe-cm-V8M" id="PJK-tc-koD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
